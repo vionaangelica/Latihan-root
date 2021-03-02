@@ -9,6 +9,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from '../login/login.component';
 
 import { HomeComponent } from '../home/home.component';
+import { GlobalvarService } from './globalvar.service';
 
 
 
@@ -24,6 +25,7 @@ const ROUTES : Routes = [
   imports:      [ BrowserModule, FormsModule, RouterModule.forRoot(ROUTES)],
   
   declarations: [ AppComponent, HelloComponent, LoginComponent, HomeComponent],
-  bootstrap:    [ AppComponent ]
+  bootstrap:    [ AppComponent ],
+  providers: [GlobalvarService]
 })
 export class AppModule { }
