@@ -6,6 +6,7 @@
   <a routerLink="/login">LOGIN</a>
 
   <br>
-  <button (click)="OpenHalLogin">LOGIN BUTTON</button>
+  <input type="text" [(ngModel)]="textNama"/>
+  <button (click)="OpenHalLogin()">LOGIN BUTTON</button>
   <router-outlet></router-outlet>
 </p>

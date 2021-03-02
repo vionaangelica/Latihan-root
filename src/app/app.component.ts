@@ -7,10 +7,12 @@ import { Router } from "@angular/router";
   styleUrls: ["./app.component.css"]
 })
 export class AppComponent {
-  constructor(private router: Router) {}
+  
   name = "Angular " + VERSION.major;
 
+  constructor(private router: Router) {}
+  textNama = ""  
   OpenHalLogin() {
-    this.router.navigate(["/login"]);
+    this.router.navigate(["/home/"+this.textNama]);
   }
 }
