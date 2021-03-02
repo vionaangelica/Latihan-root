@@ -5,8 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 
-import { LoginComponent } from './login/login.component';
 import { RouterModule, Routes } from '@angular/router';
+import { LoginComponent } from '../login/login.component';
 
 const ROUTES : Routes = [
   {path : 'login', component : LoginComponent}
